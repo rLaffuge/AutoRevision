@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Revision</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="buttonDelete">Supprimer</string>
+    <string name="buttonRefresh">Rafraichir</string>
+</resources>
