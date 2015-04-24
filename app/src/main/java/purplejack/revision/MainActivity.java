@@ -124,7 +124,7 @@ public class MainActivity extends Activity {
     private String readRevision() {
         //HTTP GET
         StringBuilder builder = new StringBuilder();
-        HttpGet httpGet = new HttpGet("http://10.0.31.23/AutoLoc/vehiculeRevision");
+        HttpGet httpGet = new HttpGet("http://rlaffuge.ddns.net/AutoLoc/vehiculeRevision");
         HttpClient client = new DefaultHttpClient();
         try{
             HttpResponse response = client.execute(httpGet);
@@ -168,7 +168,7 @@ public class MainActivity extends Activity {
     private void delRevision() throws IOException {
 
         //HTTP DELETE
-        HttpDelete httpDelete = new HttpDelete("http://10.0.31.23/AutoLoc/vehiculeRevision/" + idToDelete);
+        HttpDelete httpDelete = new HttpDelete("http://rlaffuge.ddns.net/AutoLoc/vehiculeRevision/" + idToDelete);
         HttpClient httpClient = new DefaultHttpClient();
         httpClient.execute(httpDelete);
         getRevision();
